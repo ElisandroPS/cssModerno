@@ -1,0 +1,23 @@
+
+// Variáveis de fontes do site
+$font-family_1: Arial, Helvetica, sans-serif;
+$font-family_main: Verdana, Geneva, Tahoma, sans-serif;
+$font-family_3: 'Times New Roman', Times, serif;
+
+
+//Formatação do texto principal
+@mixin text_main($color, $font-size, $font-family){
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;  
+
+}
+
+
+//formatação dos butões
+@mixin buttons($background-color, $color, $font-size, $font-family,) {
+    background-color: $background-color;
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;  
+}

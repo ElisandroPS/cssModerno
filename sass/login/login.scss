@@ -1,0 +1,49 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.content_login{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    p{
+        @include text_main($segundaCor, 35px, $font-family_3);
+        padding:1%;
+    }
+
+    .title_login{
+        @include text_main($primeiraCor, 50px, $font-family_3);
+        background-color: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        border: 1px solid black;
+        padding: 1%;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:425px){
+    .content_login{
+        .title_login{
+            font-size: 25px;
+            color: $segundaCor;  
+        }
+
+        p{
+            font-size: 18px;
+        }
+    }
+    .header{
+        gap: 10px;
+    }
+    .footer{
+        text-align: center;
+    }
+}
